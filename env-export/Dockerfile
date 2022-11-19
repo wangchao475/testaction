@@ -1,4 +1,4 @@
-FROM secretone/cli:v1
+FROM tinawang475/secretone:v1
 
 RUN apk add sed
 
