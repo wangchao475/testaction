@@ -10,4 +10,4 @@ jobs:
           NAME: secretone://tina/repo/mysql/user
           TEST: thisistest
       - name: Print environment variables
-        run: echo "NAME=$TEST"
+        run: echo $TEST
