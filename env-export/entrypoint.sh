@@ -13,9 +13,9 @@ for var_name in $env_var_names; do
 	# Escape percent signs and add a mask per line (see https://github.com/actions/runner/issues/161)
 	escaped_mask_value=$(echo "$secret_value" | sed -e 's/%/%25/g')
 	IFS=$'\n'
-	for line in $escaped_mask_value; do
-		echo "::add-mask::$line"
-	done
+#	for line in $escaped_mask_value; do
+#		echo "::add-mask::$line"
+#	done
 	unset IFS
 
 	# Use new environment file syntax on runners that support it.
