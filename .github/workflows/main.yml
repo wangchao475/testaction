@@ -8,5 +8,6 @@ jobs:
         env:
           SECRETONE_CREDENTIAL: ${{ secrets.SECRETONE_CREDENTIAL }}
           NAME: secretone://tina/repo/mysql/user
+          TEST: thisistest
       - name: Print environment variables
-        run: echo "NAME=$NAME"
+        run: echo "NAME=$TEST"
