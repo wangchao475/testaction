@@ -7,6 +7,6 @@ jobs:
       - uses: ./env-export
         env:
           SECRETONE_CREDENTIAL: ${{ secrets.SECRETONE_CREDENTIAL }}
-          PASSSECRET: secretone://vin/repo/pass
+          PASSSECRET: secretone://tina/repo/mysql/user
       - name: Print environment with masked secrets
         run: printenv
